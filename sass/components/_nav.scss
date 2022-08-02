@@ -10,16 +10,17 @@
 
 .nav__list {
   @extend %list;
+
   display: block;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     & {
       display: flex;
       margin-left: 88px;
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     & {
       margin-left: 93px;
     }
@@ -43,14 +44,14 @@
 }
 
 .nav__link {
-  @extend %link;
   display: block;
 
+  font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  text-decoration: none;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  color: var(--title-text-color);
 
   transition: color 250ms var(--cubic-bezier);
 

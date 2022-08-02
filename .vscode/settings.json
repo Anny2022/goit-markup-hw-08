@@ -11,7 +11,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -3,
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.includeItems": [],
   "liveSassCompile.settings.formats": [
