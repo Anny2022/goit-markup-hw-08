@@ -1,27 +1,54 @@
 .nav {
-  @extend %flex-centered;
+  @extend %flex-align;
+
+  @media screen and (max-width: 767.98px) {
+    & {
+      justify-content: space-between;
+    }
+  }
 }
 
 .nav__list {
-  @extend %flex-align;
-  margin-left: 93px;
+  @extend %list;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    & {
+      display: flex;
+      margin-left: 88px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    & {
+      margin-left: 93px;
+    }
+  }
 }
 
 .nav__item {
   position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .nav__link {
   @extend %link;
+  display: block;
 
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
-  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -32,21 +59,30 @@
     color: var(--accent-text-color);
     transition: color 250ms var(--cubic-bezier);
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
 }
 
 .nav__link--current {
   color: var(--accent-text-color);
 
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    content: '';
+  @media screen and (min-width: 768px) {
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      display: block;
+      content: '';
 
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-text-color);
-    border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-text-color);
+      border-radius: 2px;
+    }
   }
 }

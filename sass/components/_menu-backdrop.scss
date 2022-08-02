@@ -1,0 +1,102 @@
+.menu-backdrop {
+  display: flex;
+  background-color: var(--primary-bg-color);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @media screen and (max-width: 767.98px) {
+    & {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      transform: translateX(100%);
+      transition: transform 250ms var(--cubic-bezier);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      flex-grow: 2;
+    }
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    & {
+      z-index: 2;
+    }
+  }
+}
+
+.menu-backdrop__container {
+  display: flex;
+
+  @media screen and (max-width: 767.98px) {
+    & {
+      position: relative;
+      align-items: left;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      flex-grow: 2;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    & {
+      width: 100%;
+      flex-direction: column;
+      padding: 48px 40px;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+.menu-backdrop__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.menu-backdrop__button--cross {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.menu-backdrop__icon-cross {
+  display: none;
+}
+
+.is-open {
+  .menu-backdrop__icon-cross {
+    display: block;
+  }
+  .menu-backdrop__icon-menu {
+    display: none;
+  }
+}

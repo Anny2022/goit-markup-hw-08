@@ -21,48 +21,109 @@
 
   <body>
     <header class="header">
-      <div class="header__wrap">
-        <nav class="nav">
+      <div class="container">
+        <div class="header__wrap">
           <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="#Contacts">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="site-cont">
-          <li class="site-cont__item">
-            <a class="site-cont__link" href="mailto:info@devstudio.com">
-              <svg class="site-cont__icon" width="16" height="12">
-                <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="site-cont__item">
-            <a class="site-cont__link" href="tel:+380961111111">
-              <svg class="site-cont__icon" width="10" height="16">
-                <use href="./images/icons.svg/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <button
+            type="button"
+            class="menu-backdrop__button"
+            aria-expanded="false"
+            aria-controls="menu-backdrop__container"
+            data-menu-button=""
+          >
+            <svg
+              class="menu-backdrop__menu-icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="menu-backdrop__icon-menu"
+                href="./images/icons.svg/sprite2.svg#sandwich-btn"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-backdrop is-open" id="nav__menu-container" data-menu>
+            <div class="menu-backdrop_container">
+              <button
+                type="button"
+                class="menu-backdrop__button menu-backdrop__button--cross"
+                aria-expanded="false"
+                aria-controls="menu-backdrop__container"
+                data-menu-button-close
+              >
+                <svg
+                  class="menu-backdrop__menu-icon"
+                  width="40"
+                  height="40"
+                  aria-label="Перемикач мобільного меню"
+                >
+                  <use
+                    class="menu-backdrop__icon-cross"
+                    href="./images/icons.svg/sprite2.svg#close-menu-btn"
+                  ></use>
+                </svg>
+              </button>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--current" href="./index.html">Студія</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="site-cont">
+                <li class="site-cont__item">
+                  <a class="site-cont__link" href="mailto:info@devstudio.com">
+                    <svg class="site-cont__icon" width="16" height="12">
+                      <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="site-cont__item">
+                  <a class="site-cont__link site-cont__link--accent" href="tel:+380961111111">
+                    <svg class="site-cont__icon" width="10" height="16">
+                      <use href="./images/icons.svg/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <ul class="socialnet-list">
+                <li class="socialnet_item">
+                  <a class="socialnet_link" href="#">Instagram</a>
+                </li>
+                <li class="socialnet_item">
+                  <a class="socialnet_link" href="#">Twitter</a>
+                </li>
+                <li class="socialnet_item">
+                  <a class="socialnet_link" href="#">Facebook</a>
+                </li>
+                <li class="socialnet_item">
+                  <a class="socialnet_link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <!-- <div class="overlay"> -->
       <section class="hero">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
+        <div class="hero__wrap">
+          <h1 class="hero__title">
+            Ефективні рішення<br />
+            для вашого бізнесу
+          </h1>
+          <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
+        </div>
       </section>
-      <!-- </div> -->
       <section class="features">
-        <div class="features-wrap">
+        <div class="features-wrap container">
           <h2 class="section-title title visually-hidden" aria-hidden="true" tabindex="-1">
             Особливості
           </h2>
@@ -101,7 +162,7 @@
               </p>
             </li>
             <li class="features__card">
-              <div class="features__wrapper">
+              <div class="features__wrapper container">
                 <svg class="features__icon">
                   <use href="./images/icons.svg/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -115,7 +176,7 @@
         </div>
       </section>
       <section class="work">
-        <div class="work__wrap">
+        <div class="work__wrap container">
           <h2 class="work__title shadow">Чим ми займаємося</h2>
           <ul class="work__setbox">
             <li class="work__box">
@@ -501,7 +562,7 @@
       </div>
     </footer>
 
-    <div class="bacdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg class="modal__close-icon" width="18px" height="18px">
@@ -591,5 +652,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
