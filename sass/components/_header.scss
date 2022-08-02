@@ -1,0 +1,8 @@
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.header__wrap {
+  @extend %flex-align;
+  @extend %container;
+}

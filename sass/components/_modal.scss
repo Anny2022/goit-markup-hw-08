@@ -1,0 +1,73 @@
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(1.1);
+// }
+
+.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-height: 581px;
+  min-width: 528px;
+  border-radius: 4px;
+  background-color: var(--primary-bg-color);
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--cubic-bezier);
+
+  padding: 40px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transform: translate(-8%, -8%);
+
+  @extend %flex-centered;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-bg-color);
+  color: var(--text-logo-color);
+  // background-color: inherit;
+
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+
+  transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    color: var(--accent-text-color);
+  }
+}
+
+.modal__close-icon {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+}

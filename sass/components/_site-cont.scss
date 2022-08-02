@@ -1,0 +1,42 @@
+.site-cont {
+  @extend %flex-centered;
+  margin-left: auto;
+}
+
+.site-cont__item {
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.site-cont__link {
+  @extend %link;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: var(--primary-text-color);
+  transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-text-color);
+    transition: color 250ms var(--cubic-bezier);
+  }
+}
+
+.site-cont__icon {
+  display: inline-block;
+  fill: currentColor;
+  border: var(--border-cont-icon);
+  margin-right: 10px;
+
+  transition: fill 250ms var(--cubic-bezier);
+}

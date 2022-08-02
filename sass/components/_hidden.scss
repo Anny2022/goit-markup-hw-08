@@ -1,0 +1,7 @@
+.visually-hidden {
+  @extend %visually-hidden;
+}
+
+.is-hidden {
+  @extend %is-hidden;
+}

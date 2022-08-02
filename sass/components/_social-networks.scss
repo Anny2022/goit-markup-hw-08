@@ -1,0 +1,55 @@
+.person {
+  @extend %flex-centered;
+}
+
+.person__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.person__link {
+  @extend %flex-centered;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: inherit;
+  padding: 12px;
+
+  color: var(--social-icon-color);
+  fill: var(--social-icon-color);
+  background: rgba(255, 255, 255, 0.1);
+
+  transition-property: fill background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-text-color);
+  }
+}
+
+.person__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.person__item--top {
+  margin-top: 20px;
+}
+
+.person__link--color {
+  background: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--primary-bg-color);
+    cursor: pointer;
+  }
+}

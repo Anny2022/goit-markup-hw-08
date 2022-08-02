@@ -1,0 +1,59 @@
+.team {
+  @extend %section;
+  background-color: var(--team-bg-color);
+}
+
+.team__wrap {
+  @extend %container;
+}
+
+.team__title {
+  @extend %title;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  box-shadow: var(--box-shadow-color);
+  border-radius: 0px 0px 4px 4px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+.team__card-text {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.team__subtitle {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team__text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  line-height: 1.19;
+  text-align: center;
+
+  margin-bottom: 16px;
+}

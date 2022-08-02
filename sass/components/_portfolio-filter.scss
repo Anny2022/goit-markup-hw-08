@@ -1,0 +1,42 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__item {
+  margin-right: 8px;
+  margin-bottom: 50px;
+
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+.filter__button {
+  display: inline-block;
+  padding: 6px 22px;
+
+  background-color: var(--btn-bg-color);
+  color: var(--title-text-color);
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+
+  font-style: inherit;
+
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+
+  transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}

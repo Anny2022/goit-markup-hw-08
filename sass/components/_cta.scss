@@ -1,0 +1,8 @@
+.cta {
+  margin-right: auto;
+}
+
+.cta__title {
+  @extend %title-cta;
+  width: 100%;
+}

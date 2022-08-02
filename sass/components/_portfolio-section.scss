@@ -1,0 +1,13 @@
+.portfolio {
+  @extend %section;
+  background-color: var(--primary-bg-color);
+}
+
+.portfolio__wrap {
+  @extend %container;
+}
+
+.portfolio__title {
+  @extend %title;
+  @extend %visually-hidden;
+}

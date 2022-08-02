@@ -1,0 +1,48 @@
+.footer {
+  background-color: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: baseline;
+  @extend %container;
+}
+
+.footer__cont {
+  margin-right: 86px;
+}
+
+.footer__address {
+  width: 231px;
+}
+
+.footer__text {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.footer__list {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.footer__item {
+  margin-top: 9px;
+}
+
+.footer__text {
+  @extend %footer__text;
+  color: var(--primary-bg-color);
+}
+
+.footer__link {
+  @extend %footer__text;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}

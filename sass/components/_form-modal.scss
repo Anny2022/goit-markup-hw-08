@@ -1,0 +1,197 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  text-align: left;
+  padding: 0;
+}
+
+.form__group {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.125;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.form__field {
+  position: relative;
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  &:focus-within > .form_icon-input,
+  &:hover > .form_icon-input,
+  &:focus > .form_icon-input {
+    cursor: pointer;
+    fill: var(--accent-text-color);
+  }
+}
+
+.form__input {
+  width: 100%;
+  min-height: 40px;
+
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: var(--primary-text-color);
+  outline: none;
+
+  transition: border 250ms var(--cubic-bezier);
+
+  &:focus-within,
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid var(--accent-text-color);
+  }
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form_icon-input {
+  position: absolute;
+  align-items: center;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  fill: currentColor;
+
+  transition: fill 250ms var(--cubic-bezier);
+}
+
+.form__comment {
+  display: block;
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  outline: none;
+
+  transition: border 250ms var(--cubic-bezier);
+
+  &:focus-within,
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid var(--accent-text-color);
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
+}
+
+.form__agreement {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  padding-left: 24px;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.form__agreement {
+  a {
+    color: var(--accent-text-color);
+    text-decoration: underline;
+  }
+}
+
+.form__icon-check {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 15px;
+  opacity: 1;
+
+  transition: opacity 250ms var(--cubic-bezier);
+  outline: none;
+}
+
+.checkbox {
+  &:checked ~ .form__icon-check {
+    opacity: 0;
+  }
+}
+
+.form__icon-checked {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 15px;
+  opacity: 0;
+
+  fill: var(--accent-text-color);
+
+  transition: opacity 250ms var(--cubic-bezier);
+}
+
+.checkbox {
+  &:checked ~ .form__icon-checked {
+    opacity: 1;
+  }
+}
+
+.form__btn {
+  @extend %button;
+  width: 200px;
+  padding: 0;
+  margin: 0 auto;
+
+  text-align: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-hover-color);
+    transition: color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
+  }
+}
