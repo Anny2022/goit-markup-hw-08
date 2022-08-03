@@ -93,18 +93,18 @@
                   </a>
                 </li>
               </ul>
-              <ul class="socialnet-list">
-                <li class="socialnet_item">
-                  <a class="socialnet_link" href="#">Instagram</a>
+              <ul class="socialnet">
+                <li class="socialnet__item">
+                  <a class="socialnet__link" href="#">Instagram</a>
                 </li>
-                <li class="socialnet_item">
-                  <a class="socialnet_link" href="#">Twitter</a>
+                <li class="socialnet__item">
+                  <a class="socialnet__link" href="#">Twitter</a>
                 </li>
-                <li class="socialnet_item">
-                  <a class="socialnet_link" href="#">Facebook</a>
+                <li class="socialnet__item">
+                  <a class="socialnet__link" href="#">Facebook</a>
                 </li>
-                <li class="socialnet_item">
-                  <a class="socialnet_link" href="#">LinkedIn</a>
+                <li class="socialnet__item">
+                  <a class="socialnet__link" href="#">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -115,15 +115,12 @@
     <main>
       <section class="hero">
         <div class="hero__wrap">
-          <h1 class="hero__title">
-            Ефективні рішення<br />
-            для вашого бізнесу
-          </h1>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features">
-        <div class="features-wrap">
+        <div class="features-wrap container">
           <h2 class="section-title title visually-hidden" aria-hidden="true" tabindex="-1">
             Особливості
           </h2>
@@ -162,7 +159,7 @@
               </p>
             </li>
             <li class="features__card">
-              <div class="features__wrapper container">
+              <div class="features__wrapper">
                 <svg class="features__icon">
                   <use href="./images/icons.svg/sprite.svg#icon-astronaut"></use>
                 </svg>
@@ -176,7 +173,7 @@
         </div>
       </section>
       <section class="work">
-        <div class="work__wrap container">
+        <div class="work__wrap">
           <h2 class="work__title shadow">Чим ми займаємося</h2>
           <ul class="work__setbox">
             <li class="work__box">
@@ -199,240 +196,242 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <!-- <div class="team__card"> -->
-              <img src="./images/img1.jpg" width="270" height="260" alt="Игорь Демьяненко" />
-              <div class="team__card-text">
-                <h3 class="team__subtitle">Игор Дем'яненко</h3>
-                <p class="team__text">Product Designer</p>
-                <ul class="person">
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Instagram"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Twitter"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-twitter1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Facebook"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Linkedin"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <!-- </div> -->
-              </div>
+              <img
+                class="team__img"
+                src="./images/img1.jpg"
+                width="270"
+                height="260"
+                alt="Игорь Демьяненко"
+              />
+              <!-- <div class="team__card-text"> -->
+              <h3 class="team__subtitle">Игор Дем'яненко</h3>
+              <p class="team__text">Product Designer</p>
+              <ul class="person">
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Instagram"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg class="person__icon" width="20" height="20" aria-label="Перейти в Twitter">
+                      <use href="./images/icons.svg/sprite.svg#icon-twitter1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Facebook"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Linkedin"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- </div> -->
             </li>
             <li class="team__item">
               <!-- <div class="team__card"> -->
-              <img src="./images/img2.jpg" width="270" height="260" alt="Ольга Репина" />
-              <div class="team__card-text">
-                <h3 class="team__subtitle">Ольга Репіна</h3>
-                <p class="team__text">Frontend Developer</p>
-                <ul class="person">
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Instagram"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Twitter"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Facebook"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Linkedin"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <!-- </div> -->
-              </div>
+              <img
+                class="team__img"
+                src="./images/img2.jpg"
+                width="270"
+                height="260"
+                alt="Ольга Репина"
+              />
+              <!-- <div class="team__card-text"> -->
+              <h3 class="team__subtitle">Ольга Репіна</h3>
+              <p class="team__text">Frontend Developer</p>
+              <ul class="person">
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Instagram"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg class="person__icon" width="20" height="20" aria-label="Перейти в Twitter">
+                      <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Facebook"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Linkedin"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- </div> -->
+              <!-- </div> -->
             </li>
             <li class="team__item">
               <!-- <div class="team__card"> -->
-              <img src="./images/img3.jpg" width="270" height="260" alt="Николай Тарасов" />
-              <div class="team__card-text">
-                <h3 class="team__subtitle">Микола Тарасов</h3>
-                <p class="team__text">Marketing</p>
-                <ul class="person">
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Instagram"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Twitter"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Facebook"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="person__item">
-                    <a class="person__link" href="#">
-                      <svg
-                        class="person__icon"
-                        width="20"
-                        height="20"
-                        aria-label="Перейти в Linkedin"
-                      >
-                        <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <!-- </div> -->
-              </div>
+              <img
+                class="team__img"
+                src="./images/img3.jpg"
+                width="270"
+                height="260"
+                alt="Николай Тарасов"
+              />
+              <!-- <div class="team__card-text"> -->
+              <h3 class="team__subtitle">Микола Тарасов</h3>
+              <p class="team__text">Marketing</p>
+              <ul class="person">
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Instagram"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg class="person__icon" width="20" height="20" aria-label="Перейти в Twitter">
+                      <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Facebook"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Linkedin"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- </div> -->
+              <!-- </div> -->
             </li>
             <li class="team__item">
-              <div class="team__card">
-                <img src="./images/img4.jpg" width="270" height="260" alt="Михаил Ермаков" />
-                <div class="team__card-text">
-                  <h3 class="team__subtitle">Михайло Єрмаков</h3>
-                  <p class="team__text">UI Designer</p>
-                  <ul class="person">
-                    <li class="person__item">
-                      <a class="person__link" href="#">
-                        <svg
-                          class="person__icon"
-                          width="20"
-                          height="20"
-                          aria-label="Перейти в Instagram"
-                        >
-                          <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="person__item">
-                      <a class="person__link" href="#">
-                        <svg
-                          class="person__icon"
-                          width="20"
-                          height="20"
-                          aria-label="Перейти в Twitter"
-                        >
-                          <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="person__item">
-                      <a class="person__link" href="#">
-                        <svg
-                          class="person__icon"
-                          width="20"
-                          height="20"
-                          aria-label="Перейти в Facebook"
-                        >
-                          <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="person__item">
-                      <a class="person__link" href="#">
-                        <svg
-                          class="person__icon"
-                          width="20"
-                          height="20"
-                          aria-label="Перейти в Linkedin"
-                        >
-                          <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <!-- <div class="team__card"> -->
+              <img
+                class="team__img"
+                src="./images/img4.jpg"
+                width="270"
+                height="260"
+                alt="Михаил Ермаков"
+              />
+              <!-- <div class="team__card-text"> -->
+              <h3 class="team__subtitle">Михайло Єрмаков</h3>
+              <p class="team__text">UI Designer</p>
+              <ul class="person">
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Instagram"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg class="person__icon" width="20" height="20" aria-label="Перейти в Twitter">
+                      <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Facebook"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="person__item">
+                  <a class="person__link" href="#">
+                    <svg
+                      class="person__icon"
+                      width="20"
+                      height="20"
+                      aria-label="Перейти в Linkedin"
+                    >
+                      <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- </div> -->
+              <!-- </div> -->
             </li>
           </ul>
         </div>

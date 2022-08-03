@@ -1,6 +1,6 @@
 .logo {
   display: block;
-  max-width: 145px;
+  // max-width: 145px;
   width: 100%;
   font-family: 'Raleway';
   font-weight: 700;
@@ -16,5 +16,14 @@
 }
 
 .logo__footer {
+  margin-bottom: 20px;
   color: var(--primary-bg-color);
+
+  text-align: center;
+
+  // @media screen and (max-width: 768px) {
+  //   & {
+  //     text-align: center;
+  //   }
+  // }
 }

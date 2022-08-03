@@ -1,6 +1,14 @@
 .work {
   @extend %section;
   padding-top: 0;
+
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      display: block;
+    }
+  }
 }
 
 .work__wrap {
@@ -16,12 +24,18 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
+
+  margin: -15px;
 }
 
 .work__box {
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
+
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
+  overflow: hidden;
 
   box-shadow: var(--text-shadow-color);
 
@@ -36,6 +50,7 @@
 
 .work__text {
   @extend %flex-centered;
+  @extend %title-cta;
 
   position: absolute;
   width: 100%;
@@ -43,9 +58,6 @@
   left: 0;
   bottom: 0;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   color: var(--primary-bg-color);
   background-color: rgba(47, 48, 58, 0.8);
 
