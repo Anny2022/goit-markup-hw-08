@@ -6,6 +6,7 @@
 
 .footer__wrap {
   @extend %container;
+
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -33,29 +34,47 @@
 }
 
 .footer__address {
-  @extend %list;
-
   @media screen and (max-width: 767.98px) {
     & {
       margin-bottom: 60px;
     }
   }
+
   // width: 231px;
 }
 
 .footer__text {
-  margin-top: 20px;
+  margin-bottom: 8px;
   line-height: 1.5;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .footer__list {
-  margin: 0 auto;
-  padding-left: 0;
+  @extend %list;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      text-align: left;
+    }
+  }
 }
 
 .footer__item {
+  font-style: normal;
+
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -66,7 +85,11 @@
 
 .footer__link {
   @extend %footer__text;
+
+  font-weight: normal;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms var(--cubic-bezier);
 
   &:hover,
   &:focus {
