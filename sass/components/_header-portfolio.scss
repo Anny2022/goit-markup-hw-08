@@ -11,15 +11,5 @@
 
 .header__wrap {
   @extend %container;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @extend %flex-align;
 }
-
-//   // @media screen and (max-width: 767px) {
-//   //   & {
-//   //     display: block;
-//   //   }
-//   // }
-// }

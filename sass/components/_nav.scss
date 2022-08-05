@@ -1,11 +1,27 @@
+// .nav {
+//   @extend %flex-align;
+
+//   @media screen and (min-width: 768px) {
+//     & {
+//       justify-content: space-between;
+//     }
+//   }
+// }
+
 .nav {
   @extend %flex-align;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 768px) {
     & {
       justify-content: space-between;
     }
   }
+
+  // @media screen and (min-width: 1200px) {
+  //   & {
+  //     justify-content: center;
+  //   }
+  // }
 }
 
 .nav__list {
@@ -30,7 +46,7 @@
 .nav__item {
   position: relative;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -44,12 +60,13 @@
 }
 
 .nav__link {
+  @extend %link;
   display: block;
 
-  font-weight: 500;
+  // font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  // text-decoration: none;
 
   color: var(--title-text-color);
 
@@ -58,7 +75,7 @@
   &:hover,
   &:focus {
     color: var(--accent-text-color);
-    transition: color 250ms var(--cubic-bezier);
+    // transition: color 250ms var(--cubic-bezier);
   }
 
   @media screen and (min-width: 768px) {

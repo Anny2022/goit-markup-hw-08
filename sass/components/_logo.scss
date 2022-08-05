@@ -1,22 +1,29 @@
 .logo {
   display: block;
-  // max-width: 145px;
+  max-width: 145px;
   width: 100%;
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--text-logo-color);
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
 }
 
 .logo__accent {
   color: var(--accent-text-color);
 }
 
-.logo__footer {
+.logo--down {
   margin-bottom: 20px;
+  margin: 0 auto;
 
   color: var(--primary-bg-color);
 
