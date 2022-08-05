@@ -77,11 +77,6 @@
   @extend %flex-align;
   @extend %link;
 
-  // font-weight: 500;
-  // line-height: 1.17;
-  // letter-spacing: 0.02em;
-  // text-decoration: none;
-
   color: var(--primary-text-color);
   transition-property: color fill;
   transition-duration: 250ms;
@@ -93,10 +88,12 @@
     color: var(--accent-text-color);
     fill: var(--accent-text-color);
   }
+}
 
-  &__link--accent {
-    @media screen and (max-width: 767px) {
-      color: var(--accent-color);
+.site-cont__link--accent {
+  @media screen and (max-width: 767px) {
+    & {
+      color: var(--accent-text-color);
     }
   }
 }

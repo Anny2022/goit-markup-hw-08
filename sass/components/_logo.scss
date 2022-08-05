@@ -22,7 +22,6 @@
 }
 
 .logo--down {
-  margin-bottom: 20px;
   margin: 0 auto;
 
   color: var(--primary-bg-color);
@@ -30,6 +29,7 @@
   @media screen and (min-width: 1200px) {
     & {
       text-align: left;
+      margin: 0;
     }
   }
 }
