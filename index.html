@@ -22,7 +22,6 @@
   <body>
     <header class="header">
       <div class="header__wrap">
-        <!-- <nav class="nav"> -->
         <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
         <button
           type="button"
@@ -109,7 +108,6 @@
             </ul>
           </div>
         </div>
-        <!-- </nav> -->
       </div>
     </header>
     <main>
@@ -203,7 +201,6 @@
                 height="260"
                 alt="Игорь Демьяненко"
               />
-              <!-- <div class="team__card-text"> -->
               <h3 class="team__subtitle">Игор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="person">
@@ -251,10 +248,8 @@
                   </a>
                 </li>
               </ul>
-              <!-- </div> -->
             </li>
             <li class="team__item">
-              <!-- <div class="team__card"> -->
               <img
                 class="team__img"
                 src="./images/img2.jpg"
@@ -262,7 +257,6 @@
                 height="260"
                 alt="Ольга Репина"
               />
-              <!-- <div class="team__card-text"> -->
               <h3 class="team__subtitle">Ольга Репіна</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="person">
@@ -310,11 +304,8 @@
                   </a>
                 </li>
               </ul>
-              <!-- </div> -->
-              <!-- </div> -->
             </li>
             <li class="team__item">
-              <!-- <div class="team__card"> -->
               <img
                 class="team__img"
                 src="./images/img3.jpg"
@@ -322,7 +313,6 @@
                 height="260"
                 alt="Николай Тарасов"
               />
-              <!-- <div class="team__card-text"> -->
               <h3 class="team__subtitle">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="person">
@@ -370,11 +360,8 @@
                   </a>
                 </li>
               </ul>
-              <!-- </div> -->
-              <!-- </div> -->
             </li>
             <li class="team__item">
-              <!-- <div class="team__card"> -->
               <img
                 class="team__img"
                 src="./images/img4.jpg"
@@ -382,7 +369,6 @@
                 height="260"
                 alt="Михаил Ермаков"
               />
-              <!-- <div class="team__card-text"> -->
               <h3 class="team__subtitle">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="person">
@@ -430,8 +416,6 @@
                   </a>
                 </li>
               </ul>
-              <!-- </div> -->
-              <!-- </div> -->
             </li>
           </ul>
         </div>
@@ -571,53 +555,55 @@
         <div class="modal__wrap">
           <strong class="modal__title">Залиште свої дані, ми вам передзвонимо</strong>
           <form class="form" name="data-transfer" autocomplete="on">
-            <!-- <strong class="form__title">Залиште свої дані, ми вам передзвонимо</strong> -->
-            <div role="group" class="form__group">
+            <div class="form__field">
               <label class="form__label" for="user-name">Им'я</label>
-              <div class="form__field">
-                <svg class="form_icon-input" width="18px" height="18px">
-                  <use href="./images/icons.svg/sprite2.svg#icon-person-black-18dp"></use>
-                </svg>
-                <input
-                  class="form__input"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  minlength="2"
-                  placeholder=" "
-                  required
-                  autofocus
-                />
-              </div>
+              <svg class="form__icon-input" width="18px" height="18px">
+                <use href="./images/icons.svg/sprite2.svg#icon-person-black-18dp"></use>
+              </svg>
+              <input
+                class="form__input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                minlength="2"
+                placeholder=" "
+                required
+                autofocus
+              />
+            </div>
+            <div class="form__field">
               <label class="form__label" for="user-tel">Телефон</label>
-              <div class="form__field">
-                <svg class="form_icon-input">
-                  <use href="./images/icons.svg/sprite2.svg#icon-phone-black-18dp"></use>
-                </svg>
-                <input
-                  class="form__input"
-                  type="tel"
-                  name="user-tel"
-                  id="user-tel"
-                  pattern="\+?[0-9\s\-\(\)]+"
-                  placeholder=" "
-                  required
-                />
-              </div>
+              <!-- <svg class="form__icon-input" width="18px" height="18px">
+                <use href="./images/icons.svg/sprite2.svg#icon-phone-black-18dp"></use>
+              </svg> -->
+              <input
+                class="form__input"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                pattern="\+?[0-9\s\-\(\)]+"
+                placeholder=" "
+                required
+              />
+              <svg class="form__icon-input" width="18px" height="18px">
+                <use href="./images/icons.svg/sprite2.svg#icon-phone-black-18dp"></use>
+              </svg>
+            </div>
+            <div class="form__field">
               <label class="form__label" for="user-mail">Пошта</label>
-              <div class="form__field">
-                <svg class="form_icon-input">
-                  <use href="./images/icons.svg/sprite2.svg#icon-email-black-18dp"></use>
-                </svg>
-                <input
-                  class="form__input"
-                  type="email"
-                  name="user-mail"
-                  id="user-mail"
-                  placeholder=" "
-                  required
-                />
-              </div>
+              <svg class="form__icon-input" width="18px" height="18px">
+                <use href="./images/icons.svg/sprite2.svg#icon-email-black-18dp"></use>
+              </svg>
+              <input
+                class="form__input"
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                placeholder=" "
+                required
+              />
+            </div>
+            <div class="form__field">
               <label class="form__label" for="comment">Коментар</label>
               <textarea
                 class="form__comment"
@@ -646,7 +632,6 @@
             </label>
             <button class="form__btn" type="submit">Відправити</button>
           </form>
-          <!-- <button class="form-btn" type="submit">Відправити</button> -->
         </div>
       </div>
     </div>
