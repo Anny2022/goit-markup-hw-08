@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
-
     <header class="header">
       <div class="header__wrap">
         <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
@@ -29,7 +28,7 @@
           aria-expanded="false"
           aria-controls="menu-backdrop__container"
           data-menu-button=""
-        >
+          >
           <svg
             class="menu-backdrop__menu-icon"
             width="40"
@@ -42,7 +41,7 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-backdrop is-open" id="nav__menu-container" data-menu>
+        <div class="menu-backdrop" id="nav__menu-container" data-menu>
           <div class="menu-backdrop__container">
             <button
               type="button"
@@ -113,8 +112,9 @@
 
     <main>
       <section class="portfolio">
-        <h1 class="portfolio__title" aria-hidden="true" tabindex="-1">Портфоліо</h1>
-        <nav class="nav">
+        <div class="portfolio__wrap">
+          <h1 class="portfolio__title" aria-hidden="true" tabindex="-1">Портфоліо</h1>
+          <!-- <nav class="nav"> -->
           <ul class="filter">
             <li class="filter__item"><button class="filter__button" type="button">Все</button></li>
             <li class="filter__item"><button class="filter__button" type="button">Веб-сайты</button></li>
@@ -122,194 +122,195 @@
             <li class="filter__item"><button class="filter__button" type="button">Дизайн</button></li>
             <li class="filter__item"><button class="filter__button" type="button">Маркетинг</button></li>
           </ul>
-        </nav>
-        <div class="portfolio__wrap">
-          <ul class="card-set">
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img class="card__img" src="./images/img5.jpg" width="370" height="294" alt="Веб-сайт" />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Технокряк</h2>
-                <p class="product__text">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img src="./images/img6.jpg" width="370" height="294" alt="Постер" />
-                    
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                      </div>
-                    </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Постер New Orlean vs Golden Star</h2>
-                <p class="product__text">Дизайн</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img
-                      src="./images/img7.jpg"
-                      width="370"
-                      height="294"
-                      alt="Логотип ресторана Seafood"
-                    />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Ресторан Seafood</h2>
-                <p class="product__text">Додаток</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img src="./images/img8.jpg" width="370" height="294" alt="Наушники" />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                      </div>
-                    </div>
-                </div>
-              </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Проєкт Prime</h2>
-                <p class="product__text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
+          <!-- </nav> -->
+          <!-- <div class="portfolio__wrap"> -->
+            <ul class="card-set">
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <!-- <article class="card"> -->
                     <div class="card__thumb">
-                      <img src="./images/img9.jpg" width="370" height="294" alt="Упаковка боксы" />
+                      <img class="card__img" src="./images/img5.jpg" width="370" height="294" alt="Веб-сайт" />
                       <div class="card__overlay">
-                       <div class="card__absolute">
-                        <p class="card__overlay-text">
+                        <!-- <div class="card__absolute"> -->
+                          <p class="card__overlay-text">
+                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                          </p>
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  <!-- </article> -->
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Технокряк</h2>
+                  <p class="product__text">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img src="./images/img6.jpg" width="370" height="294" alt="Постер" />
+                      
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                          </p>
+                        </div>
+                      </div>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Постер New Orlean vs Golden Star</h2>
+                  <p class="product__text">Дизайн</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img
+                        src="./images/img7.jpg"
+                        width="370"
+                        height="294"
+                        alt="Логотип ресторана Seafood"
+                      />
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Ресторан Seafood</h2>
+                  <p class="product__text">Додаток</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img src="./images/img8.jpg" width="370" height="294" alt="Наушники" />
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Проєкт Prime</h2>
+                  <p class="product__text">Маркетинг</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                      <div class="card__thumb">
+                        <img src="./images/img9.jpg" width="370" height="294" alt="Упаковка боксы" />
+                        <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Проєкт Boxes</h2>
+                  <p class="product__text">Додаток</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img src="./images/img10.jpg" width="370" height="294" alt="Компьютер" />
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Inspiration has no Borders</h2>
+                  <p class="product__text">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img src="./images/img11.jpg" width="370" height="294" alt="Журнал" />
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Видання Limited Edition</h2>
+                  <p class="product__text">Дизайн</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img src="./images/img12.jpg" width="370" height="294" alt="Лейбл" />
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                           </p>
                         </div>
                       </div>
                     </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Проєкт Boxes</h2>
-                <p class="product__text">Додаток</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img src="./images/img10.jpg" width="370" height="294" alt="Компьютер" />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Проєкт LAB</h2>
+                  <p class="product__text">Маркетинг</p>
+                </div>
+              </li>
+              <li class="card-set__item">
+                <a href="" class="card-set__link">
+                  <article class="card">
+                    <div class="card__thumb">
+                      <img src="./images/img13.jpg" width="370" height="294" alt="Ноутбук" />
+                      <div class="card__overlay">
+                        <div class="card__absolute">
+                          <p class="card__overlay-text">
+                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Inspiration has no Borders</h2>
-                <p class="product__text">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img src="./images/img11.jpg" width="370" height="294" alt="Журнал" />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Видання Limited Edition</h2>
-                <p class="product__text">Дизайн</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img src="./images/img12.jpg" width="370" height="294" alt="Лейбл" />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Проєкт LAB</h2>
-                <p class="product__text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="card-set__link">
-                <article class="card">
-                  <div class="card__thumb">
-                    <img src="./images/img13.jpg" width="370" height="294" alt="Ноутбук" />
-                    <div class="card__overlay">
-                      <div class="card__absolute">
-                        <p class="card__overlay-text">
-                          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </a>
-              <div class="product">
-                <h2 class="product__heading">Growing Business</h2>
-                <p class="product__text">Додаток</p>
-              </div>
-            </li>
-          </ul>
+                  </article>
+                </a>
+                <div class="product">
+                  <h2 class="product__heading">Growing Business</h2>
+                  <p class="product__text">Додаток</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

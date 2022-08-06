@@ -21,6 +21,12 @@
 
   // margin-top: 20px;
   // margin-bottom: 20px;
+  &:focus-within > .form_icon-input,
+  &:hover > .form_icon-input,
+  &:focus > .form_icon-input {
+    cursor: pointer;
+    fill: var(--accent-text-color);
+  }
 }
 
 .form__label {
@@ -61,19 +67,19 @@
   fill: currentColor;
   outline: none;
 
-  transition: border 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+  transition: border 250ms var(--cubic-bezier);
 
   &:focus-within,
   &:hover,
   &:focus {
     cursor: pointer;
     border: 1px solid var(--accent-text-color);
-    color: var(--accent-text-color);
+    // color: var(--accent-text-color);
   }
 
-  &:focus-within + .form__icon-input {
-    fill: var(--accent-text-color);
-  }
+  // &:focus-within + .form__icon-input {
+  //   fill: var(--accent-text-color);
+  // }
 }
 
 .form__icon-input {
