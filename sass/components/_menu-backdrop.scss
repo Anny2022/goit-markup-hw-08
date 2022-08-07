@@ -77,11 +77,13 @@
 // }
 
 .menu-backdrop__button {
-  z-index: 2;
+  // z-index: 2;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  color: inherit;
+  fill: currentColor;
 
   transition: fill 250ms var(--cubic-bezier);
 
@@ -90,6 +92,7 @@
   &:active {
     cursor: pointer;
     fill: var(---accent-text-color);
+    color: var(---accent-text-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -103,6 +106,7 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  fill: currentColor;
 
   &:hover,
   &:focus,
@@ -130,3 +134,15 @@
     display: none;
   }
 }
+// .site-cont__icon {
+//   display: none;
+//   fill: currentColor;
+//   // border: var(--border-cont-icon);
+//   margin-right: 10px;
+
+//   @media screen and (min-width: 767px) {
+//     & {
+//       display: block;
+//     }
+//   }
+// }
