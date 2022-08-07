@@ -27,7 +27,7 @@
           type="button"
           class="menu-backdrop__button"
           aria-expanded="false"
-          aria-controls="menu-backdrop__container"
+          aria-controls="nav__menu-container"
           data-menu-button=""
         >
           <svg
@@ -42,13 +42,13 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-backdrop is-open" id="nav__menu-container" data-menu>
+        <div class="menu-backdrop" id="nav__menu-container" data-menu>
           <div class="menu-backdrop__container">
             <button
               type="button"
               class="menu-backdrop__button menu-backdrop__button--cross"
               aria-expanded="false"
-              aria-controls="menu-backdrop__container"
+              aria-controls="nav__menu-container"
               data-menu-button-close
             >
               <svg
@@ -175,7 +175,13 @@
           <h2 class="work__title shadow">Чим ми займаємося</h2>
           <ul class="work__setbox">
             <li class="work__box">
-              <img class="work__image" src="./images/box1.jpg" width="370" alt="Создание макета" />
+              <img
+                class="work__image"
+                srcset="./images/img-box1.jpg 1x, ./images/img-box1@x2.jpg 1x"
+                src="./images/box1.jpg"
+                width="370"
+                alt="Создание макета"
+              />
               <h3 class="work__text">Десктопні додатки</h3>
             </li>
             <li class="work__box">
