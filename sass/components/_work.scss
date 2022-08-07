@@ -66,5 +66,6 @@
 }
 
 .work__image {
-  @extend %img;
+  display: flex;
+  position: relative;
 }
