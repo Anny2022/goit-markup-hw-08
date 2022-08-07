@@ -1,63 +1,40 @@
-.filter {
+.portfolio__filter {
   @extend %list;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  margin-bottom: 50px;
-  // list-style: none;
 
-  // width: 100%;
-  // margin: 0;
-  // padding: 0;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     & {
       justify-content: center;
-      // margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   & {
-  //     margin-bottom: 50px;
-  //   }
-  // }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.filter__item {
+.portfolio__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
-  // margin-right: 8px;
-  // margin-bottom: 50px;
 
   &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
-
-  // @media screen and (min-width: 768px) {
-  //   justify-content: space-between;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   justify-content: space-around;
-  // }
-
-  // &:nth-child(5n) {
-  //   margin-right: 0;
-  // }
 }
 
-.filter__button {
-  display: inline-block;
+.portfolio__button {
+  @extend %list;
   padding: 6px 22px;
-
   background-color: var(--btn-bg-color);
   color: var(--title-text-color);
-  border: 1px solid #eeeeee;
+  border: 1px solid transparent;
+  border-color: transparent;
   border-radius: 4px;
-
-  font-style: inherit;
 
   font-weight: 500;
   line-height: 1.62;

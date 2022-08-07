@@ -62,8 +62,22 @@
   }
 }
 
+// nav__menu-button {
+//   z-index: 2;
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+//   &:hover,
+//   &:focus {
+//     fill: $accent-color;
+//   }
+// }
+
 .menu-backdrop__button {
-  display: inline-flex;
+  z-index: 2;
   margin: 0;
   padding: 0;
   border: none;
@@ -75,7 +89,7 @@
   &:focus,
   &:active {
     cursor: pointer;
-    color: var(---accent-text-color);
+    fill: var(---accent-text-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -94,7 +108,7 @@
   &:focus,
   &:active {
     cursor: pointer;
-    fill: var(--accent-color);
+    fill: var(---accent-text-color);
   }
 
   @media screen and (min-width: 768px) {
